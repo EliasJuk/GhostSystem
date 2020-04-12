@@ -44,7 +44,7 @@ db 0xAA
 
 # ❔ How to Build
 
-> Para builder você vai necessitar do programa nasm e ir até o diretorio onte esta seu arquivo de boot e dar o seguinte comando:
+> Para buildar você vai necessitar do programa nasm e ir até o diretorio onte esta seu arquivo de boot e dar o seguinte comando:
 
 ```bash
 
