@@ -1,20 +1,82 @@
-# How to Build an Operating System
+# ❔ How to Build an Operating System
 
-## Registers Assembly
+## ✨ What you need to get started
 
-> AX, BX, CX e DX
+- 📝 Text editor
+- 📀 Tools for mounting ISO images
+- 💻 Virtual machine
 
-> AH, AL, BH, BL, CH, CL e DH, DL
+---
+
+## BOOT START
+
+![Boot](readme/boot.gif)
+
+---
+
+## 🔖 Define directives
+
+>   Allocating Storage Space for Initialized Data
 
 
-## Basic Boot
+|     Directive       |    Purpose    |      Storage Space      |
+|---------------------|---------------|-------------------------|
+|         DB          | Define Byte   | Allocates 1 byte        |   
+|         DW          | Define Word   | Allocates 2 bytes       |
+
+
+---
+
+## 💾 Basic Boot
+
+```bash
+[ORG 0x7C00]
+
+LOOP:
+  jmp LOOP
+
+times 510-($-$$) db 0
+db 0x55
+db 0xAA
+```
+
+# ❔ How to Build
+
+> Para builder você vai necessitar do programa nasm e ir até o diretorio onte esta seu arquivo de boot e dar o seguinte comando:
 
 ```bash
 
-# Boot
-$ _
+$ nasm boot.asm -f bin -o boot.bin
 
 ```
+
+---
+
+
+## Registers Assembly
+
+
+|      Registers      |        Description            |
+|---------------------|-------------------------------|
+|         AX          |                               |   
+|         BX          |                               |
+|         CX          |                               |
+|         DX          |                               |
+
+---
+
+## Registers Assembly
+
+|      Registers      |        Description            |
+|---------------------|-------------------------------|
+|         AH          |                               |   
+|         AL          |                               |
+|         BH          |                               |
+|         BL          |                               |
+|         CH          |                               |
+|         CL          |                               |
+|         DH          |                               |
+|         DL          |                               |
 
 
 
