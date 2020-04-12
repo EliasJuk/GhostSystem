@@ -10,7 +10,9 @@
 
 ## BOOT START
 
-![Boot](readme/boot.gif)
+<p align="center">
+  <img alt="Boot" title="Boot" src="readme/boot.gif" width="700px" />
+</p>
 
 ---
 
