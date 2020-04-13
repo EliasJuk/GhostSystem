@@ -3,8 +3,11 @@
 ## ✨ What you need to get started
 
 - 📝 Text editor
-- 📀 Tools for mounting ISO images
 - 💻 Virtual machine
+- 💿 [Rufus](https://rufus.ie/downloads/) - Recommended rufus-2.18
+- 🔧 Binary compiler - [Nasm](https://www.nasm.us/)
+- 💾 Data image file - [Fergoraw](https://www.fergonez.net/softwares/fraw)
+- 📀 Tools for mounting ISO images
 
 ---
 
@@ -13,19 +16,6 @@
 <p align="center">
   <img alt="Boot" title="Boot" src="readme/boot.gif" width="700px" />
 </p>
-
----
-
-## 🔖 Define directives
-
->   Allocating Storage Space for Initialized Data
-
-
-|     Directive       |    Purpose    |      Storage Space      |
-|---------------------|---------------|-------------------------|
-|         DB          | Define Byte   | Allocates 1 byte        |   
-|         DW          | Define Word   | Allocates 2 bytes       |
-
 
 ---
 
@@ -44,13 +34,32 @@ db 0xAA
 
 # ❔ How to Build
 
-> Para buildar você vai necessitar do programa nasm e ir até o diretorio onte esta seu arquivo de boot e dar o seguinte comando:
+>To build, you will need the nasm program, go to the directory where the boot file is located and give the following command:
 
 ```bash
 
 $ nasm boot.asm -f bin -o boot.bin
 
 ```
+
+---
+
+## 🌎 Hello World!
+
+
+
+---
+
+## 🔖 Define directives
+
+>   Allocating Storage Space for Initialized Data
+
+
+|     Directive       |    Purpose    |      Storage Space      |
+|---------------------|---------------|-------------------------|
+|         DB          | Define Byte   | Allocates 1 byte        |   
+|         DW          | Define Word   | Allocates 2 bytes       |
+
 
 ---
 
