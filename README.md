@@ -44,11 +44,6 @@ $ nasm boot.asm -f bin -o boot.bin
 
 ---
 
-## 🌎 Hello World!
-
-
-
----
 
 ## 🔖 Define directives
 
@@ -59,6 +54,35 @@ $ nasm boot.asm -f bin -o boot.bin
 |---------------------|---------------|-------------------------|
 |         DB          | Define Byte   | Allocates 1 byte        |   
 |         DW          | Define Word   | Allocates 2 bytes       |
+
+
+---
+
+
+## 🌎 Hello World!
+
+<p align="center">
+  <img alt="HelloWorld" title="HelloWorld" src="readme/helloworld.gif" width="700px" />
+</p>
+
+
+|    Decimal    |  Hexadecimal  |   Caractere   |
+|---------------|-------------------------------|
+|      72       |      48       |       H       |
+|      101      |      65       |       e       |
+|      108      |      6C       |       l       |
+|      108      |      6C       |       l       |
+|      111      |      6F       |       o       |
+|---------------|-------------------------------|
+|      32       |      20       |               |
+|---------------|-------------------------------|
+|      87       |      57       |       W       |
+|      111      |      6F       |       o       |
+|      114      |      72       |       r       |
+|      108      |      6C       |       l       |
+|      100      |      64       |       d       |
+|      33       |      21       |       !       |
+|---------------|-------------------------------|
 
 
 ---
