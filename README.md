@@ -62,7 +62,7 @@ $ nasm boot.asm -f bin -o boot.bin
 ## 🌎 Hello World!
 
 <p align="center">
-  <img alt="HelloWorld" title="HelloWorld" src="readme/helloworld.gif" width="700px" />
+  <img alt="HelloWorld" title="HelloWorld" src="readme/helloworld.gif" />
 </p>
 
 
@@ -73,7 +73,6 @@ $ nasm boot.asm -f bin -o boot.bin
 |      108      |      6C       |       l       |
 |      108      |      6C       |       l       |
 |      111      |      6F       |       o       |
-|---------------|-------------------------------|
 |      32       |      20       |               |
 |---------------|-------------------------------|
 |      87       |      57       |       W       |
@@ -82,7 +81,6 @@ $ nasm boot.asm -f bin -o boot.bin
 |      108      |      6C       |       l       |
 |      100      |      64       |       d       |
 |      33       |      21       |       !       |
-|---------------|-------------------------------|
 
 
 ---
