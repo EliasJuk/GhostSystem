@@ -14,7 +14,7 @@ call PrintString
 jmp $
 
 HelloWorld:
-    mov ah, 0eh
+    mov ah, 0eh     ;#AH + AL = AX
     mov al, 48h
     int 10h
     mov al, 65h
@@ -23,6 +23,8 @@ HelloWorld:
     int 10h
     mov al, 6ch
     int 10h
+    mov al, 6fh
+    int 10h 
     mov al, 20h
     int 10h
     mov al, 57h
@@ -34,6 +36,8 @@ HelloWorld:
     mov al, 6ch
     int 10h
     mov al, 64h
+    int 10h
+    mov al, 21h
     int 10h
     ret
 
