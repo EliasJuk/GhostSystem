@@ -57,7 +57,7 @@ ret
 PrintString:
     mov ah, 09h
     mov bh, [Pagination]
-    mov bl, 1111_0001b
+    mov bl, 0001_1111b  ;# 1111_0001b
     mov cx, 1
     mov al, [si]
     print:
