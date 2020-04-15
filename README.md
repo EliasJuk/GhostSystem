@@ -76,6 +76,10 @@ $ nasm boot.asm -f bin -o boot.bin
 |      32       |      20       |               |  |      33       |      21       |       !       |
 
 
+## 🌎 Welcome!
 
+<p align="center">
+  <img alt="Welcome" title="Welcome" src="readme/welcome.gif" />
+</p>
 
 
