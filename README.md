@@ -76,34 +76,6 @@ $ nasm boot.asm -f bin -o boot.bin
 |      32       |      20       |               |  |      33       |      21       |       !       |
 
 
----
-
-## Registers Assembly
-
-
-|      Registers      |        Description            |
-|---------------------|-------------------------------|
-|         AX          |                               |   
-|         BX          |                               |
-|         CX          |                               |
-|         DX          |                               |
-
----
-
-## Registers Assembly
-
-|      Registers      |        Description            |
-|---------------------|-------------------------------|
-|         AH          |                               |   
-|         AL          |                               |
-|         BH          |                               |
-|         BL          |                               |
-|         CH          |                               |
-|         CL          |                               |
-|         DH          |                               |
-|         DL          |                               |
-
-
 
 
 
