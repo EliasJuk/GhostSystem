@@ -22,8 +22,6 @@ ShowString:
     call MoveCursor
     mov si, Welcome
     call PrintString
-    mov ah, 00
-    int 16h
     jmp END
 
 ConfigSegment:
@@ -80,6 +78,6 @@ MoveCursor:
 ret
 
 END:
-    int 19h
+    jmp $
 
 
