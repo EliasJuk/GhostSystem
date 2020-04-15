@@ -65,6 +65,8 @@ $ nasm boot.asm -f bin -o boot.bin
   <img alt="HelloWorld" title="HelloWorld" src="readme/helloworld.gif" />
 </p>
 
+<p>Tabela ansi com os caracteres em Decimal e Hexadecial passados para escrever um Hello World! na tela</p>
+
 
 |    Decimal    |  Hexadecimal  |   Caractere   |  |    Decimal    |  Hexadecimal  |   Caractere   |
 |---------------|---------------|---------------|--|---------------|---------------|---------------|
@@ -75,6 +77,8 @@ $ nasm boot.asm -f bin -o boot.bin
 |      111      |      6F       |       o       |  |      100      |      64       |       d       |
 |      32       |      20       |               |  |      33       |      21       |       !       |
 
+
+---
 
 ## 🌎 Welcome!
 
