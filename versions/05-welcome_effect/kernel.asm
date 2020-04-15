@@ -6,18 +6,19 @@ jmp OSMain
 BackWidth db 0
 BackHeight db 0
 Pagination db 0
-Welcome db "Bem-vindo ao GhostOS!",0
+Welcome db "Bem-Vindo!",0
 
 OSMain:
     call ConfigSegment
     call ConfigStack
     call TEXT.SetVideoMode
+    call BackColor
     jmp ShowString
 
 
 ShowString:
-    mov dh, 3   ;#Move third row
-    mov dl, 2   ;#Move third col (dl + 1)
+    mov dh, 3
+    mov dl, 2
     call MoveCursor
     mov si, Welcome
     call PrintString
@@ -30,22 +31,33 @@ ret
 
 ConfigStack:
     mov ax, 7D00h
-    mov ss, ax      ;#7D00h:03FEh
+    mov ss, ax
     mov sp, 03FEh
 ret
 
 TEXT.SetVideoMode:
     mov ah, 00h
-    mov al, 03h     ;#TEXT MODE
+    mov al, 03h
     int 10h
-    mov BYTE[BackWidth], 80     ;#80 cols
-    mov BYTE[BackHeight], 20    ;#20 Rows
+    mov BYTE[BackWidth], 80
+    mov BYTE[BackHeight], 20
 ret
+
+BackColor:
+    mov ah, 06h
+    mov al, 0
+    mov bh, 0001_1111b
+    mov ch, 0
+    mov cl, 0
+    mov dh, 5
+    mov dl, 80
+    int 10h
+ret 
 
 PrintString:
     mov ah, 09h
     mov bh, [Pagination]
-    mov bl, 40
+    mov bl, 0001_1111b  ;# 1111_0001b
     mov cx, 1
     mov al, [si]
     print:
@@ -62,7 +74,7 @@ MoveCursor:
     mov ah, 02h
     mov bh, [Pagination]
     inc dl
-    int 10
+    int 10h
 ret
 
 END:
